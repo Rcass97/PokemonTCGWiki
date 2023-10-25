@@ -2,6 +2,7 @@
 
 import { useQuery } from '@tanstack/react-query';
 import { fetcher } from '@/API/fetchers';
+import { PokemonCard } from '@/API/interfaces'
 
 export default function Home() {
   const { data, isLoading, isError } = useQuery({ queryKey: ['todos'], queryFn: fetcher })
@@ -14,8 +15,9 @@ export default function Home() {
 
   return (
     <div>
-      <h1>My Next.js App</h1>
-      <pre>{JSON.stringify(data, null, 2)}</pre>
+      {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
+      <p className='text-3xl font-bold text-center'>{data.data.name}</p>
+      <img src={data.data.images.large} className='rounded-xl m-auto'/>
     </div>
   );
 }
