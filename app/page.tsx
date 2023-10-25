@@ -4,7 +4,9 @@ import { useQuery } from '@tanstack/react-query';
 import { fetcher } from '@/API/fetchers';
 
 export default function Home() {
-  const { data, isLoading, isError } = useQuery(['data'], fetcher);
+  const { data, isLoading, isError } = useQuery({ queryKey: ['todos'], queryFn: fetcher })
+
+  console.log(data)
 
   if (isLoading) return <div>Loading...</div>;
   

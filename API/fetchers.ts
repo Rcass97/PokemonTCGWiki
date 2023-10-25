@@ -1,18 +1,19 @@
-import axios from 'axios';
-
-const API_KEY = 'bdcafce3-4507-4ed0-9110-7ad780a12154';
-
-const fetcher = async (url: string) => {
+export async function fetcher() {
     try {
-        const response = await axios.get(url, {
-            headers: {
-                'Authorization': `Bearer ${API_KEY}`,
-            },
+        const response = await fetch('https://api.pokemontcg.io/v2/cards/base1-30', {
+          method: 'GET',
+          headers: {
+            'Authorization': 'bdcafce3-4507-4ed0-9110-7ad780a12154',
+          },
         });
-        return response.data;
-    } catch (error) {
-        throw error;
-    }
-};
 
-export { fetcher };
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
+        return await response.json();
+        
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+}
