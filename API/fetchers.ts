@@ -1,6 +1,6 @@
 export async function fetcher() {
     try {
-        const response = await fetch('https://api.pokemontcg.io/v2/cards/base1-44', {
+        const response = await fetch('https://api.pokemontcg.io/v2/cards?q=name:bulbasaur', {
           method: 'GET',
           headers: {
             'Authorization': 'bdcafce3-4507-4ed0-9110-7ad780a12154',
@@ -17,4 +17,3 @@ export async function fetcher() {
         console.error('Error fetching data:', error);
       }
 }
-
