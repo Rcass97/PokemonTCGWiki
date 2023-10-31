@@ -21,8 +21,8 @@ export default function Cards() {
             <div>
                 <div className="grid lg:grid-cols-5 grid-cols-2 gap-2 m-3">
                     {data.map((data: any, index: number) => (
-                        <Link href={'/card/' + data.id}>
-                            <div key={index} className='border border-[#1B263B] rounded-xl p-2'>
+                        <Link href={'/card/' + data.id} key={index}>
+                            <div className='border border-[#1B263B] rounded-xl p-2'>
                                 <img src={data.images.small} className='rounded-xl m-auto' />
                                 <p className='text-lg font-bold text-center'>{data.name}</p>
                                 <p className='text-md text-center'>{data.rarity}</p>
