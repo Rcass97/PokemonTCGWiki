@@ -11,7 +11,7 @@ export default function Page({ params }: { params: { slug: string } }) {
         staleTime: 2.77778e-7
     })
 
-    if (isLoading) return <div>Loading...</div>;
+    if (isLoading) return <div><img src='/loading.gif' className='m-auto w-10 mt-20'/></div>;
 
     if (isError) return <div>Error fetching data</div>;
     //     try {
@@ -50,7 +50,7 @@ export default function Page({ params }: { params: { slug: string } }) {
             <div className='m-3'>
                 <div className='flex flex-col justify-between items-center gap-6 mb-10'>
                     <div className=''>
-                        <img src={data.images.large} className='rounded-xl m-auto mb-4 shadow-xl' />
+                        <img src={data.images.large} className='rounded-2xl m-auto mb-4 shadow-xl' />
                         <p className='text-3xl font-bold text-center'>{data.name}</p>
                         <p className='text-md text-center '>{data.set.series} - {data.rarity}</p>
                         <p className='text-xs text-center'>Release Date: {data.set.releaseDate.substring(0, 4)}</p>
@@ -66,16 +66,13 @@ export default function Page({ params }: { params: { slug: string } }) {
                                 </tr>
                             </thead>
                             <tbody className='text-center'>
-                                <tr className='border border-neutral-950'>
-                                    <td className='border border-neutral-950 p-2'>{data.attacks[0].name}</td>
-                                    <td className='border border-neutral-950 p-2'>{data.attacks[0].cost[0]}</td>
-                                    <td className='border border-neutral-950 p-2'>{data.attacks[0].damage}</td>
+                            {data.attacks?.map((attack: any, index: number)  => (
+                                <tr className='border border-neutral-950' key={index}>
+                                    <td className='border border-neutral-950 p-2'>{attack.name}</td>
+                                    <td className='border border-neutral-950 p-2'>{attack.cost}</td>
+                                    <td className='border border-neutral-950 p-2'>{attack.damage}</td>
                                 </tr>
-                                {/* <tr className='border border-neutral-950'>
-                                        <td className='border border-neutral-950'>{data.attacks[1].name}</td>
-                                        <td className='border border-neutral-950'>{data.attacks[1].cost[0]}</td>
-                                        <td className='border border-neutral-950'>{data.attacks[1].damage}</td>
-                                    </tr> */}
+                                ))}
                             </tbody>
                         </table>
                     </div>

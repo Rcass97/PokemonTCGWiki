@@ -11,7 +11,7 @@ export default function Cards() {
         staleTime: 2.77778e-7
     })
 
-    if (isLoading) return <div>Loading...</div>;
+    if (isLoading) return <div><img src='/loading.gif' className='m-auto w-10 mt-20'/></div>;
 
     if (isError) return <div>Error fetching data</div>;
 
