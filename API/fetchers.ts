@@ -32,10 +32,11 @@ export async function set(id: string) {
   }
 }
 
-export async function AllItems() {
+export async function AllItems(id) {
   try {
 
-    let params: PokemonTCG.Parameter = { pageSize: 20, page: 2 };
+    // let params: PokemonTCG.Parameter = { pageSize: 40, page: 6 };
+    let params: PokemonTCG.Parameter = { q: `id:${id}`, orderBy:'number'};
 
     const response = PokemonTCG.findCardsByQueries(params)
       .then(allCards => {

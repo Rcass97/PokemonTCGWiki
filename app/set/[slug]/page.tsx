@@ -2,7 +2,7 @@
 import { useQuery } from '@tanstack/react-query';
 import { set } from '@/API/fetchers';
 
-export default function Page({params}: {params:{slug: string}}) {
+export default function Page({ params }: { params: { slug: string } }) {
 
     const { data, isLoading, isError } = useQuery({
         queryKey: ['singleSet', params.slug],
@@ -18,9 +18,10 @@ export default function Page({params}: {params:{slug: string}}) {
 
         return (
             <div>
-                <div className="grid lg:grid-cols-5 grid-cols-2 gap-2 m-3">
-                    <div className='border border-[#1B263B] rounded-xl p-2'>
-                        <img src={data.images.symbol} className='rounded-xl m-auto' />
+                <div className='flex flex-col justify-center'>
+                    <img src={data.images.logo} className='w-60 m-auto my-5' />
+                    <div className='flex justify-center items-center gap-2'>
+                        <img src={data.images.symbol} className='w-10' />
                         <p className='text-lg font-bold text-center'>{data.name}</p>
                     </div>
                 </div>
