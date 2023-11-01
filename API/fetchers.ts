@@ -32,10 +32,9 @@ export async function set(id: string) {
   }
 }
 
-export async function AllItems(id) {
+export async function specificSet(id: string) {
   try {
 
-    // let params: PokemonTCG.Parameter = { pageSize: 40, page: 6 };
     let params: PokemonTCG.Parameter = { q: `id:${id}`, orderBy:'number'};
 
     const response = PokemonTCG.findCardsByQueries(params)
@@ -46,6 +45,25 @@ export async function AllItems(id) {
     const allCards = await response;
 
     return allCards;
+
+  } catch (error) {
+    console.error('Error fetching data:', error);
+  }
+}
+
+export async function randomCards() {
+  try {
+
+    let params: PokemonTCG.Parameter = {pageSize: 20, page: 3};
+
+    const response = PokemonTCG.findCardsByQueries(params)
+      .then(randomCards => {
+      return randomCards
+    });
+
+    const randomCards = await response;
+
+    return randomCards;
 
   } catch (error) {
     console.error('Error fetching data:', error);

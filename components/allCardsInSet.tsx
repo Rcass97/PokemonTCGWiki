@@ -1,13 +1,13 @@
 'use client'
 import { useQuery } from '@tanstack/react-query';
-import { randomCards } from '@/API/fetchers';
+import { specificSet } from '@/API/fetchers';
 import Link from 'next/link';
 
-export default function Cards() {
+export default function AllCardsInSet(params: { slug: string }) {
 
     const { data, isLoading, isError } = useQuery({
-        queryKey: ['homeCards'],
-        queryFn: randomCards,
+        queryKey: ['allCardsInSet', params.slug],
+        queryFn: () => specificSet(params.slug),
         staleTime: 2.77778e-7
     })
 
@@ -15,11 +15,12 @@ export default function Cards() {
 
     if (isError) return <div>Error fetching data</div>;
 
+    console.log(data)
+
     if (data) {
 
         return (
             <div>
-                <h1 className='text-center text-lg mt-3 p-2'>Random Cards on Homepage</h1>
                 <div className="grid lg:grid-cols-5 grid-cols-2 gap-6 m-3">
                     {data.map((data: any, index: number) => (
                         <Link href={'/card/' + data.id} key={index}>
@@ -35,7 +36,7 @@ export default function Cards() {
                         </Link>
                     ))}
                 </div>
-                
+
             </div>
         );
     }

@@ -11,7 +11,7 @@ export default function Page({ params }: { params: { slug: string } }) {
         staleTime: 2.77778e-7
     })
 
-    if (isLoading) return <div><img src='/loading.gif' className='m-auto w-10 mt-20'/></div>;
+    if (isLoading) return <div><img src='/loading.gif' className='m-auto w-10 mt-20' /></div>;
 
     if (isError) return <div>Error fetching data</div>;
     //     try {
@@ -66,12 +66,16 @@ export default function Page({ params }: { params: { slug: string } }) {
                                 </tr>
                             </thead>
                             <tbody className='text-center'>
-                            {data.attacks?.map((attack: any, index: number)  => (
-                                <tr className='border border-neutral-950' key={index}>
-                                    <td className='border border-neutral-950 p-2'>{attack.name}</td>
-                                    <td className='border border-neutral-950 p-2'>{attack.cost}</td>
-                                    <td className='border border-neutral-950 p-2'>{attack.damage}</td>
-                                </tr>
+                                {data.attacks?.map((attack: any, index: number) => (
+                                    <tr className='border border-neutral-950' key={index}>
+                                        <td className='border border-neutral-950 p-2'>{attack.name}</td>
+                                        <td className='border p-2 grid grid-cols-2 gap-2' >
+                                            {attack?.cost.map((cost: any, index: number) => (
+                                                <img src={'/' + cost + '.png'} className='w-8' key={index} />
+                                            ))}
+                                        </td>
+                                        <td className='border border-neutral-950 p-2'>{attack.damage}</td>
+                                    </tr>
                                 ))}
                             </tbody>
                         </table>
