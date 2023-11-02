@@ -19,7 +19,7 @@ export default function Cards() {
 
         return (
             <div>
-                <h1 className='text-center text-lg mt-3 p-2'>Random Cards on Homepage</h1>
+                <h1 className='text-center text-lg mt-3 p-2'>Pick a card, any card!</h1>
                 <div className="grid lg:grid-cols-5 grid-cols-2 gap-6 m-3">
                     {data.map((data: any, index: number) => (
                         <Link href={'/card/' + data.id} key={index}>

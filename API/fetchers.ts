@@ -51,6 +51,22 @@ export async function specificSet(id: string) {
   }
 }
 
+export async function allSets() {
+  try {
+    const response = PokemonTCG.getAllSets()
+      .then(allSets => {
+        return allSets
+      });
+
+    const allSets = await response;
+
+    return allSets;
+
+  } catch (error) {
+    console.error('Error fetching data:', error);
+  }
+}
+
 export async function randomCards() {
   try {
 
