@@ -20,12 +20,12 @@ export default function AllSets() {
         return (
             <div>
                 <h1 className='text-center text-lg p-2'>All Sets</h1>
-                <div className='grid lg:grid-cols-5 grid-cols-2'>
+                <div className='grid lg:grid-cols-5 grid-cols-2 gap-3 lg:m-auto'>
                     {data.map((data: any, index: number) => (
                         <Link href={'/set/' + data.id} className='' key={index}>
-                            <div className='flex flex-col justify-center items-center gap-1 w-48 h-24'>
+                            <div className='flex flex-col justify-end items-center gap-1 h-24'>
                                 <div className=''>
-                                    <img src={data.images.logo} className='w-20' />
+                                    <img src={data.images.logo} className='w-[70px]' />
                                 </div>
                                 <div className='flex items-center'>
                                     <img src={data.images.symbol} className='w-4' />
