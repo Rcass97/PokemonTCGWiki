@@ -70,7 +70,7 @@ export async function allSets() {
 export async function randomCards() {
   try {
 
-    let params: PokemonTCG.Parameter = {pageSize: 20, page: 3};
+    let params: PokemonTCG.Parameter = {pageSize: 30, page: 3};
 
     const response = PokemonTCG.findCardsByQueries(params)
       .then(randomCards => {
