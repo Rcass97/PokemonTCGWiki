@@ -48,7 +48,7 @@ export default function Page({ params }: { params: { slug: string } }) {
 
         return (
             <div className='m-3'>
-                <div className='flex flex-col justify-between items-center gap-6 mb-10'>
+                <div className='flex flex-col justify-between items-center gap-6 mb-5'>
                     <div className=''>
                         <img src={data.images.large} className='rounded-2xl m-auto mb-4 shadow-xl' />
                         <p className='text-3xl font-bold text-center'>{data.name}</p>
@@ -84,8 +84,8 @@ export default function Page({ params }: { params: { slug: string } }) {
                 </div>
                 <div className=''>
                     <Link href={'/set/' + data.set.id} className='flex justify-center items-center gap-2'>
-                        <img src={data.set.images.symbol} className='w-8' />
-                        <img src={data.set.images.logo} className='w-20' />
+                        <img src={data.set.images.symbol} className='w-12' />
+                        <img src={data.set.images.logo} className='w-28' />
                     </Link>
                 </div>
             </div>
