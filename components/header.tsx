@@ -1,5 +1,6 @@
 'use client'
 import Link from "next/link";
+import DropdownMenu from "./dropdown";
 
 export default function Header() {
 
@@ -10,7 +11,7 @@ export default function Header() {
                 <p className="text-white">PokéTCG Wiki</p>
             </Link>
             <div className="flex items-center">
-                <img src="/menu.png" className="w-10 h-10 invert mx-2 p-2" />
+                <DropdownMenu />
             </div>
         </nav>
     );

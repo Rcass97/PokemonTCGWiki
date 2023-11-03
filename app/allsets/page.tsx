@@ -19,23 +19,23 @@ export default function AllSets() {
 
         return (
             <div>
-    <h1 className="text-center text-lg p-2">All Sets</h1>
-    <div className="grid lg:grid-cols-5 grid-cols-2 gap-1 mx-2 lg:m-auto">
-        {data.map((data: any, index: number) => (
-            <Link href={"/set/" + data.id} className="" key={index}>
-                <div className="flex flex-col justify-between items-center m-auto h-[150px] w-auto border-[2px] border-zinc-400 bg-zinc-300 rounded-xl">
-                    <div className="w-3/4 h-3/4"> 
-                        <img src={data.images.logo} className="w-full h-full object-contain p-1" />
-                    </div>
-                    <div className="flex items-center gap-1">
-                        <img src={data.images.symbol} className="w-6 h-6 object-contain" />
-                        <p className="text-sm text-center">{data.name}</p>
-                    </div>
+                <h1 className="text-center text-lg p-2">All Sets</h1>
+                <div className="grid lg:grid-cols-5 grid-cols-2 gap-1 m-2 lg:m-auto">
+                    {data.map((data: any, index: number) => (
+                        <Link href={"/set/" + data.id} className="" key={index}>
+                            <div className="flex flex-col justify-between items-center m-auto h-[150px] w-auto border-[2px] border-zinc-400 bg-zinc-300 rounded-xl">
+                                <div className="w-3/4 h-3/4">
+                                    <img src={data.images.logo} className="w-full h-full object-contain p-1" />
+                                </div>
+                                <div className="flex items-center gap-1">
+                                    <img src={data.images.symbol} className="w-6 h-6 object-contain" />
+                                    <p className="text-sm text-center">{data.name}</p>
+                                </div>
+                            </div>
+                        </Link>
+                    ))}
                 </div>
-            </Link>
-        ))}
-    </div>
-</div>
+            </div>
 
         );
     }

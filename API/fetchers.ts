@@ -1,6 +1,6 @@
 import { PokemonTCG } from "pokemon-tcg-sdk-typescript";
 
-export async function item(id: string) {
+export async function item(id: string) { //finding a single card by id, returns single card by it's id
   try {
     const response = PokemonTCG.findCardByID(id)
       .then(card => {
@@ -16,7 +16,7 @@ export async function item(id: string) {
   }
 }
 
-export async function set(id: string) {
+export async function set(id: string) { //finding a single set by id
   try {
     const response = PokemonTCG.findSetByID(id)
       .then(set => {
@@ -32,7 +32,7 @@ export async function set(id: string) {
   }
 }
 
-export async function specificSet(id: string) {
+export async function specificSet(id: string) { //returns all cards in a set, orders by card number
   try {
 
     let params: PokemonTCG.Parameter = { q: `id:${id}`, orderBy:'number'};
@@ -51,7 +51,7 @@ export async function specificSet(id: string) {
   }
 }
 
-export async function allSets() {
+export async function allSets() { //returns all exisiting sets
   try {
     const response = PokemonTCG.getAllSets()
       .then(allSets => {
@@ -67,10 +67,10 @@ export async function allSets() {
   }
 }
 
-export async function randomCards() {
+export async function randomCards() { //returns 30 random cards from specified page from API 
   try {
 
-    let params: PokemonTCG.Parameter = {pageSize: 30, page: 3};
+    let params: PokemonTCG.Parameter = {pageSize: 30, page: 6};
 
     const response = PokemonTCG.findCardsByQueries(params)
       .then(randomCards => {
