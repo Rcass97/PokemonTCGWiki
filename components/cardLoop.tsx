@@ -1,11 +1,15 @@
 'use client'
 import Link from 'next/link';
+import { motion } from "framer-motion"
 
 export default function CardLoop(params: { data: any }) {
 
     return (
         <div>
-            <div className="grid lg:grid-cols-5 grid-cols-2 gap-4 m-2">
+            <motion.div className="grid lg:grid-cols-5 grid-cols-2 gap-4 m-2"
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}>
                 {params.data.map((data: any, index: number) => (
                     <Link href={'/card/' + data.id} key={index}>
                         <div className=''>
@@ -19,7 +23,7 @@ export default function CardLoop(params: { data: any }) {
                         </div>
                     </Link>
                 ))}
-            </div>
+            </motion.div>
 
         </div>
     );
