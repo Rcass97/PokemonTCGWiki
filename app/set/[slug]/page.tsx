@@ -26,7 +26,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                             <img src={data.images.logo} className='w-60 m-auto my-5' />
                             <div className='flex justify-center items-center gap-2'>
                                 <img src={data.images.symbol} className='w-10' />
-                                <p className='text-lg font-bold text-center'>{data.name}</p>
+                                <p className='text-lg font-bold text-center'>{data.series} - {data.name}</p>
                             </div>
                         </div>
                 </div>
