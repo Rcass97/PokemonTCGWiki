@@ -1,14 +1,13 @@
 'use client'
 import { useQuery } from '@tanstack/react-query';
-import { randomCards } from '@/API/fetchers';
-import Link from 'next/link';
+import { specificSet } from '@/API/fetchers';
 import CardLoop from './cardLoop';
 
 export default function Cards() {
 
     const { data, isLoading, isError } = useQuery({
         queryKey: ['homeCards'],
-        queryFn: randomCards,
+        queryFn: () => specificSet('sv4'),
         staleTime: 2.77778e-7
     })
 
@@ -20,11 +19,12 @@ export default function Cards() {
 
         return (
             <div>
-                <h1 className='text-center text-lg mt-3 p-2'>Pick a card, any card!</h1>
+                <img src="sv04-logo.png" className='m-auto' />
+                <h1 className='text-center text-lg mt-3 p-2'>Check out some cards from the newest set <p className='italic'>Scarlet & Violet - Paradox Rift</p></h1>
                 <div>
-                   <CardLoop data={data}/>
+                    <CardLoop data={data} />
                 </div>
-                
+
             </div>
         );
     }
