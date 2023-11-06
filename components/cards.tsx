@@ -1,13 +1,13 @@
 'use client'
 import { useQuery } from '@tanstack/react-query';
-import { specificSet } from '@/API/fetchers';
+import { homeCards } from '@/API/fetchers';
 import CardLoop from './cardLoop';
 
 export default function Cards() {
 
     const { data, isLoading, isError } = useQuery({
         queryKey: ['homeCards'],
-        queryFn: () => specificSet('sv4'),
+        queryFn: () => homeCards('sv4'),
         staleTime: 2.77778e-7
     })
 
