@@ -3,8 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import CardLoop from "./cardLoop";
 import CardsError from "./cardsError";
 
-export default function SearchResults(params: { keywords: string }) {
-    if (params.keywords) {
+export default function SearchResults(params: { keywords: string }) {  
         const { data, isLoading, isError } = useQuery({
             queryKey: ['searchResults', params.keywords],
             queryFn: () => searchCards(params.keywords),
@@ -27,4 +26,3 @@ export default function SearchResults(params: { keywords: string }) {
             </div>
         );
     }
-}

@@ -112,6 +112,8 @@ export async function searchCards(keywords?: string) {
       return randomCards;
     }
 
+    return [];
+
   } catch (error) {
     console.error('Error fetching data:', error);
   }
