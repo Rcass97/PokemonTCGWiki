@@ -1,7 +1,6 @@
 'use client'
 import { useQuery } from '@tanstack/react-query';
 import { specificSet } from '@/API/fetchers';
-import Link from 'next/link';
 import CardLoop from './cardLoop';
 
 export default function AllCardsInSet(params: { slug: string }) {

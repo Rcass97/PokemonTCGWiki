@@ -12,7 +12,7 @@ export default function CardLoop(params: { data: any }) {
                         <motion.div className=''
                             initial={{ opacity: 0, scale: 0.5, x: -100 }}
                             animate={{ opacity: 1, scale: 1, x: 0 }}
-                            transition={{ duration: 0.5, delay: index / 10 }}>
+                            transition={{ duration: 0.5, delay: index / 9 }}>
                             <img src={data.images.small} className='rounded-xl m-auto mb-2 shadow-xl transition ease-in-out sm:hover:scale-105' />
                             <div className='flex flex-col'>
                                 <p className='text-lg font-bold text-center'>{data.name}</p>

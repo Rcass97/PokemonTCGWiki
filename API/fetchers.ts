@@ -67,18 +67,18 @@ export async function allSets() { //returns all exisiting sets
   }
 }
 
-function shuffleArray(array: any[]) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
-}
+// function shuffleArray(array: any[]) {
+//   for (let i = array.length - 1; i > 0; i--) {
+//     const j = Math.floor(Math.random() * (i + 1));
+//     [array[i], array[j]] = [array[j], array[i]];
+//   }
+//   return array;
+// }
 
 export async function homeCards(id: string) { //returns 30 random cards from specified set from API, used for HomeScreen
   try {
 
-    let params: PokemonTCG.Parameter = {q: `id:${id}`, pageSize: 30};
+    let params: PokemonTCG.Parameter = {q: `id:${id}`, pageSize: 30, orderBy:'number'};
 
     const response = PokemonTCG.findCardsByQueries(params)
       .then(randomCards => {
@@ -87,9 +87,30 @@ export async function homeCards(id: string) { //returns 30 random cards from spe
 
     const randomCards = await response;
 
-    const shuffledCards = shuffleArray(randomCards);
+    return randomCards;
 
-    return shuffledCards;
+    // const shuffledCards = shuffleArray(randomCards);
+
+    // return shuffledCards;
+
+  } catch (error) {
+    console.error('Error fetching data:', error);
+  }
+}
+
+export async function searchCards(keywords?: string) {
+  try {
+
+    let params: PokemonTCG.Parameter = { q: 'name:' + keywords, orderBy:'releaseDate' };
+    if (keywords) {
+      const response = PokemonTCG.findCardsByQueries(params)
+        .then(randomCards => {
+          return randomCards
+        });
+      const randomCards = await response;
+
+      return randomCards;
+    }
 
   } catch (error) {
     console.error('Error fetching data:', error);
