@@ -66,7 +66,7 @@ export default function SearchBar() {
 
     return (
         <>
-            <div className="p-10 flex flex-row justify-center gap-5 items-center">
+            <div className="p-10 flex flex-row justify-center sm:gap-5 gap-1 items-center">
                 <input
                     type="text"
                     className="border-neutral-700 border rounded-md px-2 py-1"

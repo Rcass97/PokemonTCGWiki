@@ -19,3 +19,179 @@
 body {
   background-color: #E0E1DD;
 }
+
+/*  
+name: 500
+rarity: 300
+body: 100
+resist: 300
+artists: 200
+*/
+
+.Grass{
+  @apply bg-green-500;
+}
+.Grass-body{
+  @apply bg-green-100;
+}
+.Grass-resist{
+  @apply bg-green-300;
+}
+.Grass-artist{
+  @apply bg-green-200;
+}
+
+.Colorless {
+  @apply bg-zinc-500;
+}
+.Colorless-body {
+  @apply bg-zinc-100;
+}
+.Colorless-resist {
+  @apply bg-zinc-300;
+}
+.Colorless-artist {
+  @apply bg-zinc-200;
+}
+
+.Darkness {
+  @apply bg-sky-950;
+}
+.Darkness-body {
+  @apply bg-sky-600;
+}
+.Darkness-resist {
+  @apply bg-sky-800;
+}
+.Darkness-artist {
+  @apply bg-sky-700;
+}
+.Darkness-artist p, .Darkness-body p, .Darkness-resist p, .Darkness h1{
+  @apply text-white;
+}
+
+.Dragon {
+  @apply bg-amber-500;
+}
+.Dragon-body {
+  @apply bg-amber-100;
+}
+.Dragon-resist {
+  @apply bg-amber-300;
+}
+.Dragon-artist {
+  @apply bg-amber-200;
+}
+
+.Fairy {
+  @apply bg-pink-500;
+}
+.Fairy-body {
+  @apply bg-pink-100;
+}
+.Fairy-resist {
+  @apply bg-pink-300;
+}
+.Fairy-artist {
+  @apply bg-pink-200;
+}
+
+.Fighting {
+  @apply bg-orange-500;
+}
+.Fighting-body {
+  @apply bg-orange-100;
+}
+.Fighting-resist {
+  @apply bg-orange-300;
+}
+.Fighting-artist {
+  @apply bg-orange-200;
+}
+
+.Fire {
+  @apply bg-red-500;
+}
+.Fire-body {
+  @apply bg-red-100;
+}
+.Fire-resist {
+  @apply bg-red-300;
+}
+.Fire-artist {
+  @apply bg-red-200;
+}
+
+.Lightning {
+  @apply bg-yellow-500;
+}
+.Lightning-body {
+  @apply bg-yellow-100;
+}
+.Lightning-resist {
+  @apply bg-yellow-300;
+}
+.Lightning-artist {
+  @apply bg-yellow-200;
+}
+
+.Metal {
+  @apply bg-gray-500;
+}
+.Metal-body {
+  @apply bg-gray-100;
+}
+.Metal-resist {
+  @apply bg-gray-300;
+}
+.Metal-artist {
+  @apply bg-gray-200;
+}
+
+.Psychic {
+  @apply bg-purple-500;
+}
+.Psychic-body {
+  @apply bg-purple-100;
+}
+.Psychic-resist {
+  @apply bg-purple-300;
+}
+.Psychic-artist {
+  @apply bg-purple-200;
+}
+
+.Water {
+  @apply bg-blue-500;
+}
+.Water-body {
+  @apply bg-blue-100;
+}
+.Water-resist {
+  @apply bg-blue-300;
+}
+.Water-artist {
+  @apply bg-blue-200;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
