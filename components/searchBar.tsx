@@ -66,7 +66,7 @@ export default function SearchBar() {
 
     return (
         <>
-            <div className="p-10 flex flex-row justify-center gap-10 items-center">
+            <div className="p-10 flex flex-row justify-center gap-5 items-center">
                 <input
                     type="text"
                     className="border-neutral-700 border rounded-md px-2 py-1"
@@ -80,7 +80,7 @@ export default function SearchBar() {
                 />
                 <button
                     onClick={handleSearch}
-                    className="border-neutral-700 border rounded-md px-2 py-1 hover:bg-white"
+                    className="border-neutral-700 border rounded-md px-2 py-1 bg-neutral-500 text-white hover:bg-white hover:text-black"
                 >
                     Click to Search
                 </button>
