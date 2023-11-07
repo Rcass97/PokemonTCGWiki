@@ -67,18 +67,12 @@ export async function allSets() { //returns all exisiting sets
   }
 }
 
-// function shuffleArray(array: any[]) {
-//   for (let i = array.length - 1; i > 0; i--) {
-//     const j = Math.floor(Math.random() * (i + 1));
-//     [array[i], array[j]] = [array[j], array[i]];
-//   }
-//   return array;
-// }
-
 export async function homeCards(id: string) { //returns 30 random cards from specified set from API, used for HomeScreen
   try {
 
-    let params: PokemonTCG.Parameter = {q: `id:${id}`, pageSize: 30, orderBy:'number'};
+    const randomPage = Math.floor(Math.random() * 26) + 1;
+
+    let params: PokemonTCG.Parameter = {q: `set.id:${id}`, pageSize: 10, page: randomPage};
 
     const response = PokemonTCG.findCardsByQueries(params)
       .then(randomCards => {
@@ -88,10 +82,6 @@ export async function homeCards(id: string) { //returns 30 random cards from spe
     const randomCards = await response;
 
     return randomCards;
-
-    // const shuffledCards = shuffleArray(randomCards);
-
-    // return shuffledCards;
 
   } catch (error) {
     console.error('Error fetching data:', error);
