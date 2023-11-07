@@ -2,6 +2,7 @@
 import { useQuery } from '@tanstack/react-query';
 import { allSets } from '@/API/fetchers';
 import Link from 'next/link';
+import { motion } from "framer-motion"
 
 export default function AllSets() {
 
@@ -19,19 +20,33 @@ export default function AllSets() {
 
         return (
             <div>
-                <h1 className="text-center text-[25px] font-bold p-1">All Sets</h1>
-                <div className="grid sm:grid-cols-5 grid-cols-2 gap-2 m-2 lg:m-auto ">
+                <h1 className="text-center text-[30px] font-bold p-1 my-5">All Sets</h1>
+                <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-3 grid-cols-2 sm:gap-10 gap-5 m-2 sm:px-10 px-2 lg:m-auto ">
                     {data.map((data: any, index: number) => (
                         <Link href={"/set/" + data.id} className="" key={index}>
-                            <div className="flex flex-col justify-between items-center m-auto">
-                                <div className="h-[145px] w-[145px] border-t-2 border-x-2 border-[#0D1B2A] bg-[#ACB7C3] rounded-t-xl hover:bg-[#778DA9]">
-                                    <img src={data.images.logo} className="w-full h-full object-contain p-1" />
+                            <motion.div className="flex flex-col justify-between items-center m-auto "
+                                initial={{ opacity: 0, scale: 0.5, y:-100, x: -100 }}
+                                animate={{ opacity: 1, scale: 1, y: 0, x: 0 }}
+                                transition={{ duration: 0.5, delay: index / 15 }}
+                                whileHover={{ scale: 1.2 }}
+                                whileTap={{ scale: 1.1 }}
+                                drag="x"
+                                dragConstraints={{ left: -100, right: 100 }}>
+                                <motion.div className=" h-[200px] w-full border-t-2 border-x-2 border-[#0D1B2A] rounded-t-xl bg-[#ACB7C3]"
+                                    whileTap={{ scale: 1.1 }}
+                                    whileHover={{
+                                        backgroundColor: "#5C7490",
+                                        transition: { duration: 0.5 },
+                                    }}
+
+                                >
+                                    <img src={data.images.logo} className="w-full h-full object-contain p-5" />
+                                </motion.div>
+                                <div className="flex justify-center items-center bg-[#2E4059] w-full text-white border-b-2 border-x-2 border-[#0D1B2A] rounded-b-xl">
+                                    <img src={data.images.symbol} className="sm:w-10 sm:h-10 w-7 h-7 p-1 object-contain" />
+                                    <p className="sm:text-[18px] text-[12px] font-bold text-center">{data.name}</p>
                                 </div>
-                                <div className="flex justify-center items-center bg-[#2E4059] w-[145px] text-white border-b-2 border-x-2 border-[#0D1B2A] rounded-b-xl">
-                                    <img src={data.images.symbol} className="w-7 h-7 p-1 object-contain" />
-                                    <p className="text-[11px] font-bold text-center">{data.name}</p>
-                                </div>
-                            </div>
+                            </motion.div>
                         </Link>
                     ))}
                 </div>
