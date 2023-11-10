@@ -22,7 +22,7 @@ export default function Page({ params }: { params: { slug: string } }) {
         return (
             <div>
                 <div>
-                        <div className='flex flex-col justify-center'>
+                        <div className='flex flex-col justify-center p-10'>
                             <img src={data.images.logo} className='w-60 m-auto my-5' />
                             <div className='flex justify-center items-center gap-2'>
                                 <img src={data.images.symbol} className='w-10' />

@@ -21,19 +21,18 @@ export default function AllSets() {
         return (
             <div>
                 <h1 className="text-center text-[30px] font-bold p-1 my-5">All Sets</h1>
-                <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-3 grid-cols-2 sm:gap-10 gap-5 m-2 sm:px-10 px-2 lg:m-auto ">
+                <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-3 grid-cols-2 sm:gap-10 gap-5 m-2 sm:px-10 px-2 lg:m-auto">
                     {data.map((data: any, index: number) => (
                         <Link href={"/set/" + data.id} className="" key={index}>
                             <motion.div className="flex flex-col justify-between items-center m-auto "
                                 initial={{ opacity: 0, scale: 0.5, y:-100, x: -100 }}
                                 animate={{ opacity: 1, scale: 1, y: 0, x: 0 }}
-                                transition={{ duration: 0.5, delay: index / 15 }}
+                                transition={{ duration: 0.2, delay: index / 15 }}
                                 whileHover={{ scale: 1.2 }}
                                 whileTap={{ scale: 1.1 }}
                                 drag="x"
                                 dragConstraints={{ left: -100, right: 100 }}>
                                 <motion.div className=" h-[200px] w-full border-t-2 border-x-2 border-[#0D1B2A] rounded-t-xl bg-[#ACB7C3]"
-                                    whileTap={{ scale: 1.1 }}
                                     whileHover={{
                                         backgroundColor: "#5C7490",
                                         transition: { duration: 0.5 },
