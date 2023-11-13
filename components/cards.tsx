@@ -21,8 +21,8 @@ export default function Cards() {
         return (
             <div>
                 <SearchBar />
-                <img src="sv04-logo.png" className='m-auto' />
-                <h1 className='text-center text-lg mt-3 p-2'>Check out some cards from the newest set <p className='italic'>Scarlet & Violet - Paradox Rift</p></h1>
+                <img src="sv04-logo.png" className='m-auto w-4/6' />
+                <h1 className='text-center text-lg my-3 p-2'>Check out some cards from the newest set <p className='italic'>Scarlet & Violet - Paradox Rift</p></h1>
                 <div>
                     <CardLoop data={data} />
                 </div>

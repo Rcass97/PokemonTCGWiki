@@ -67,12 +67,10 @@ export async function allSets() { //returns all exisiting sets
   }
 }
 
-export async function homeCards(id: string) { //returns 30 random cards from specified set from API, used for HomeScreen
+export async function homeCards(id: string) { //returns the first 30 cards from specified set from API, used for HomeScreen
   try {
 
-    const randomPage = Math.floor(Math.random() * 26) + 1;
-
-    let params: PokemonTCG.Parameter = {q: `set.id:${id}`, pageSize: 10, page: randomPage};
+    let params: PokemonTCG.Parameter = {q: `set.id:${id}`, pageSize: 10, page: 1};
 
     const response = PokemonTCG.findCardsByQueries(params)
       .then(randomCards => {

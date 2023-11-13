@@ -27,17 +27,14 @@ export default function AllSets() {
                             <motion.div className="flex flex-col justify-between items-center m-auto "
                                 initial={{ opacity: 0, scale: 0.5, y:-100, x: -100 }}
                                 animate={{ opacity: 1, scale: 1, y: 0, x: 0 }}
-                                transition={{ duration: 0.2, delay: index / 15 }}
+                                transition={{ duration: 0.2 }}
                                 whileHover={{ scale: 1.2 }}
-                                whileTap={{ scale: 1.1 }}
-                                drag="x"
-                                dragConstraints={{ left: -100, right: 100 }}>
+                                whileTap={{ scale: 1.1 }}>
                                 <motion.div className=" h-[200px] w-full border-t-2 border-x-2 border-[#0D1B2A] rounded-t-xl bg-[#ACB7C3]"
                                     whileHover={{
                                         backgroundColor: "#5C7490",
                                         transition: { duration: 0.5 },
                                     }}
-
                                 >
                                     <img src={data.images.logo} className="w-full h-full object-contain p-5" />
                                 </motion.div>
