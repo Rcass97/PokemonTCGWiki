@@ -6,7 +6,7 @@ export default function CardLoop(params: { data: any }) {
 
     return (
         <div>
-            <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-3 grid-cols-2 gap-5 mx-10">
+            <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-3 grid-cols-2 gap-16 mx-10">
                 {params.data.map((data: any, index: number) => (
                     <Link href={'/card/' + data.id} key={index}>
                         <motion.div className='flex justify-center'
@@ -15,7 +15,7 @@ export default function CardLoop(params: { data: any }) {
                                transition={{ duration: 0.2 }}
                                whileHover={{ scale: 1.07 }}
                                whileTap={{ scale: 1.1 }}>
-                            <img src={data.images.small} className='w-11/12 rounded-xl mb-2 shadow-xl' />
+                            <img src={data.images.small} className='w-full rounded-xl mb-2 shadow-xl' />
                         </motion.div>
                         <div className='flex flex-col'>
                             <p className='text-lg font-bold text-center'>{data.name}</p>

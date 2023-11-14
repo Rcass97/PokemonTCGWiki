@@ -20,6 +20,27 @@ body {
   background-color: #E0E1DD;
 }
 
+/* styles.css or your preferred stylesheet */
+
+.horizontal-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch; /* Enables momentum scrolling on iOS devices */
+  scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+.scroll-item {
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  margin-right: 16px; /* Adjust as needed for space between items */
+}
+
+.scroll-item:last-child {
+  margin-right: 0; /* Remove margin for the last item */
+}
+
+
 /*  
 name: 500
 rarity: 300

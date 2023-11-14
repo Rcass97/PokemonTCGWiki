@@ -19,15 +19,17 @@ export default function Cards() {
     if (data) {
 
         return (
-            <div>
+            <>
                 <SearchBar />
-                <img src="sv04-logo.png" className='m-auto w-4/6' />
-                <h1 className='text-center text-lg my-3 p-2'>Check out some cards from the newest set <p className='italic'>Scarlet & Violet - Paradox Rift</p></h1>
-                <div>
-                    <CardLoop data={data} />
-                </div>
+                    <div className=''>
+                        <img src="sv04-logo.png" className='m-auto w-3/4 my-5' />
+                        <h1 className='text-center text-lg mb-3'>Check out some cards from the newest set <p className='italic'>Scarlet & Violet - Paradox Rift</p></h1>
+                        <div>
+                            <CardLoop data={data} />
+                        </div>
+                    </div>
 
-            </div>
+            </>
         );
     }
 }

@@ -15,7 +15,7 @@ export default function SearchBar() {
     const [sendSearch, setSendSearch] = useState<string>('')
 
     const inputRef = useRef<HTMLInputElement>(null);
-    
+
     const [startSearch, setStartSearch] = useState<boolean>(!!initialSearchTerm);
     const [isInputFocused, setInputFocused] = useState(false);
 
@@ -66,7 +66,8 @@ export default function SearchBar() {
 
     return (
         <>
-            <div className="p-10 flex flex-row justify-center sm:gap-5 gap-1 items-center">
+
+            <div className="flex flex-row justify-center items-center mt-10">
                 <input
                     type="text"
                     className="border-neutral-700 border rounded-md px-2 py-1"
@@ -80,9 +81,9 @@ export default function SearchBar() {
                 />
                 <button
                     onClick={handleSearch}
-                    className="border-neutral-700 border rounded-md px-2 py-1 bg-neutral-500 text-white hover:bg-white hover:text-black"
+                    className="w-10 h-10 p-2"
                 >
-                    Click to Search
+                    <img src='loupe.png' />
                 </button>
             </div>
             <AnimatePresence>
