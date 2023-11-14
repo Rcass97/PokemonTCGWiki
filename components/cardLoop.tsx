@@ -6,7 +6,7 @@ export default function CardLoop(params: { data: any }) {
 
     return (
         <div>
-            <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-3 grid-cols-2 gap-16 mx-10">
+            <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-3 grid-cols-2 gap-10 mx-10">
                 {params.data.map((data: any, index: number) => (
                     <Link href={'/card/' + data.id} key={index}>
                         <motion.div className='flex justify-center'

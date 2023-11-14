@@ -25,7 +25,7 @@ export default function AllSets() {
                     {data.map((data: any, index: number) => (
                         <Link href={"/set/" + data.id} className="" key={index}>
                             <motion.div className="flex flex-col justify-between items-center m-auto "
-                                initial={{ opacity: 0, scale: 0.5, y:-100, x: -100 }}
+                                initial={{ opacity: 0, scale: 0.5, y: -100, x: -100 }}
                                 animate={{ opacity: 1, scale: 1, y: 0, x: 0 }}
                                 transition={{ duration: 0.2 }}
                                 whileHover={{ scale: 1.2 }}

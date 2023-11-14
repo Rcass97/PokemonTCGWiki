@@ -2,6 +2,8 @@
 import { useQuery } from '@tanstack/react-query';
 import { set } from '@/API/fetchers';
 import AllCardsInSet from '@/components/allCardsInSet';
+import Link from 'next/link';
+import { motion } from "framer-motion"
 
 export default function Page({ params }: { params: { slug: string } }) {
 
@@ -21,14 +23,26 @@ export default function Page({ params }: { params: { slug: string } }) {
 
         return (
             <div>
+                <Link href={'/allsets/'}>
+
+                    <motion.button className='flex items-center border border-black rounded-md text-2xl p-2 ml-2 mt-2 w-auto'
+                        whileHover={{
+                            backgroundColor: "#0D1B2A",
+                            transition: { duration: 0.7 },
+                            scale: 1.05,
+                            color: "white",
+                        }}>
+                        &#8592; All Sets
+                    </motion.button>
+                </Link>
                 <div>
-                        <div className='flex flex-col justify-center p-10'>
-                            <img src={data.images.logo} className='w-60 m-auto my-5' />
-                            <div className='flex justify-center items-center gap-2'>
-                                <img src={data.images.symbol} className='w-10' />
-                                <p className='text-lg font-bold text-center'>{data.series} - {data.name}</p>
-                            </div>
+                    <div className='flex flex-col justify-center p-5'>
+                        <img src={data.images.logo} className='w-1/4 m-auto my-2' />
+                        <div className='flex justify-center items-center gap-2'>
+                            <img src={data.images.symbol} className='w-10' />
+                            <p className='text-lg font-bold text-center'>{data.series} - {data.name}</p>
                         </div>
+                    </div>
                 </div>
                 <div>
                     <AllCardsInSet slug={params.slug} />
