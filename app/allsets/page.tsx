@@ -30,7 +30,7 @@ export default function AllSets() {
                                 transition={{ duration: 0.2 }}
                                 whileHover={{ scale: 1.2 }}
                                 whileTap={{ scale: 1.1 }}>
-                                <motion.div className=" h-[200px] w-full border-t-2 border-x-2 border-[#0D1B2A] rounded-t-xl bg-[#ACB7C3]"
+                                <motion.div className="sm:h-[200px] h-[100px] w-full border-t-2 border-x-2 border-[#0D1B2A] rounded-t-xl bg-[#ACB7C3]"
                                     whileHover={{
                                         backgroundColor: "#5C7490",
                                         transition: { duration: 0.5 },

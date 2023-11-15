@@ -26,7 +26,7 @@ const DropdownMenu: React.FC = () => {
 
       {isOpen && (
         <div
-          className="origin-top-right absolute right-0 mt-3 w-40 rounded-bl-xl shadow-xl bg-[#0D1B2A] ring-1 ring-black ring-opacity-5 focus:outline-none"
+          className="origin-top-right absolute right-0 mt-5 w-40 rounded-bl-xl shadow-xl bg-[#0D1B2A] ring-1 ring-black ring-opacity-5 focus:outline-none"
           role="menu"
           aria-orientation="vertical"
           aria-labelledby="options-menu"
