@@ -39,7 +39,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                                 initial={{ opacity: 0, scale: 0.5, y: -100, x: -100 }}
                                 animate={{ opacity: 1, scale: 1, y: 0, x: 0 }}
                                 transition={{ duration: 0.2 }}
-                                whileHover={{ scale: 1.07 }}
+                                whileHover={{ scale: 1.03 }}
                                 whileTap={{ scale: 1.1 }}>
                                 <img src={data.images.large} className='rounded-2xl m-auto mb-4 shadow-xl sm:w-[463px] sm:h-[645px]' />
                             </motion.div>
@@ -79,20 +79,20 @@ export default function Page({ params }: { params: { slug: string } }) {
                                                 <div>
                                                     <div className='flex gap-1 items-center'>
                                                         {attack?.cost.map((cost: any, index: number) => (
-                                                            <img src={'/' + cost + '.png'} className='sm:w-8 sm:h-8 w-6 h-6' key={index} />
+                                                            <img src={'/' + cost + '.png'} className='sm:w-8 sm:h-8 w-6 h-6 mt-10' key={index} />
                                                         ))}
-                                                        <p className='sm:text-[30px] text-[20px] font-bold'>{attack.name}</p>
+                                                        <p className='sm:text-[30px] text-[20px] font-bold mt-10'>{attack.name}</p>
                                                     </div>
                                                     <p className='sm:text-[20px] text-[15px]'>{attack.text}</p>
                                                 </div>
-                                                <p className='sm:text-[20px] text-[15px]'>{attack.damage}</p>
+                                                <p className='sm:text-[20px] text-[15px] mt-10 font-bold'>{attack.damage}</p>
                                             </div>
                                         ))}
                                     </div>
                                     <div>
                                         {data.rules && data?.rules.map((rules: any, index: number) => (
                                             <div className='mb-5'>
-                                                <p className='sm:text-[30px] text-[15px] font-bold italic' key={index}>{rules}</p>
+                                                <p className='sm:text-[20px] text-[15px] font-bold italic' key={index}>{rules}</p>
                                             </div>
                                         ))}
                                     </div>

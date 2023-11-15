@@ -22,7 +22,7 @@ export default function Cards() {
             <>
                 <SearchBar />
                     <div className=''>
-                        <img src="sv04-logo.png" className='m-auto w-3/4 my-5' />
+                        <img src="sv04-logo.png" className='m-auto sm:w-2/6 w-3/4 my-5' />
                         <h1 className='text-center text-lg mb-3'>Check out some cards from the newest set <p className='italic'>Scarlet & Violet - Paradox Rift</p></h1>
                         <div>
                             <CardLoop data={data} />
