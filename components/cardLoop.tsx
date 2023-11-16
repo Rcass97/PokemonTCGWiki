@@ -1,6 +1,8 @@
 'use client'
 import Link from 'next/link';
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 export default function CardLoop(params: { data: any }) {
 

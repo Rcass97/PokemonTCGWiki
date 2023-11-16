@@ -35,7 +35,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                 <div className='p-5'>
                     <div className='md:flex md:flex-row md:items-start md:gap-1 md:w1/2 flex flex-col justify-evenly items-center gap-6 mb-5'>
                         <div>
-                            <motion.div className=''
+                            <motion.div className='p-5'
                                 initial={{ opacity: 0, scale: 0.5, y: -100, x: -100 }}
                                 animate={{ opacity: 1, scale: 1, y: 0, x: 0 }}
                                 transition={{ duration: 0.2 }}
@@ -45,8 +45,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                             </motion.div>
 
                             <Link href={'/set/' + data.set.id} className='flex justify-center items-center gap-2 '>
-                                <img src={data.set.images.symbol} className='w-12' />
-                                <img src={data.set.images.logo} className='w-[135px]' />
+                                <img src={data.set.images.logo} className='w-[200px]' />
                             </Link>
                         </div>
                         <div className='md:flex md:flex-col md:w-1/2 w-screen p-5'>
@@ -137,10 +136,11 @@ export default function Page({ params }: { params: { slug: string } }) {
                                         Illustrator: {data.artist}
                                     </p>
                                 </div>
-                                <div>
+                                <div className='flex items-center gap-2'>
                                     <p className='sm:text-base text-xs'>
                                         Release Date: {data.set.releaseDate}
                                     </p>
+                                    <img src={data.set.images.symbol} className='w-12' />
                                 </div>
                             </div>
 

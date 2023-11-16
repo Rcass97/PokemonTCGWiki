@@ -67,10 +67,10 @@ export default function SearchBar() {
     return (
         <>
 
-            <div className="flex flex-row justify-center items-center mt-10">
+            <div className="flex flex-row justify-center items-center my-5">
                 <input
                     type="text"
-                    className="border-neutral-700 border rounded-md px-2 py-1"
+                    className="border-neutral-700 border rounded-md px-2 py-1 w-1/3"
                     onChange={handleChange}
                     onKeyDown={handleKeyPress}
                     placeholder="Search"
