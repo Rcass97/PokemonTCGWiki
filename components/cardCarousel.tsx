@@ -17,7 +17,7 @@ export default function CardCarousel(params: { data: any }) {
         initialSlide: 0,
         autoplay: true,
         pauseOnHover: true,
-        autoplaySpeed: 2500,
+        autoplaySpeed: 2000,
         cssEase: "linear",
         responsive: [
             {
@@ -30,7 +30,7 @@ export default function CardCarousel(params: { data: any }) {
                     dots: false,
                     autoplay: true,
                     pauseOnHover: true,
-                    autoplaySpeed: 2500,
+                    autoplaySpeed: 2000,
                     cssEase: "linear",
                 }
             },
@@ -44,7 +44,7 @@ export default function CardCarousel(params: { data: any }) {
                     dots: false,
                     autoplay: true,
                     pauseOnHover: true,
-                    autoplaySpeed: 2500,
+                    autoplaySpeed: 2000,
                     cssEase: "linear",
                 }
             },
@@ -58,7 +58,7 @@ export default function CardCarousel(params: { data: any }) {
                     dots: false,
                     autoplay: true,
                     pauseOnHover: true,
-                    autoplaySpeed: 2500,
+                    autoplaySpeed: 2000,
                     cssEase: "linear",
                 }
             }
