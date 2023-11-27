@@ -4,6 +4,7 @@ import { Nunito } from 'next/font/google'
 import './globals.css'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import Header from '@/components/header'
+import Footer from '@/components/footer'
 
 const nunito = Nunito({ subsets: ['latin'] })
 
@@ -17,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <QueryClientProvider client={queryClient}>
-        <body className={nunito.className}><Header />{children}</body>
+        <body className={nunito.className}><Header />{children}<Footer /></body>
       </QueryClientProvider>
     </html>
   )

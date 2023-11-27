@@ -12,7 +12,7 @@ export default function CardCarousel(params: { data: any }) {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 4,
+        slidesToShow: 5,
         slidesToScroll: 1,
         initialSlide: 0,
         autoplay: true,
@@ -23,7 +23,7 @@ export default function CardCarousel(params: { data: any }) {
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 4,
                     slidesToScroll: 1,
                     initialSlide: 0,
                     infinite: true,
@@ -37,7 +37,7 @@ export default function CardCarousel(params: { data: any }) {
             {
                 breakpoint: 600,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 3,
                     slidesToScroll: 1,
                     initialSlide: 0,
                     infinite: true,
