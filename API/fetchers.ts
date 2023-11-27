@@ -71,7 +71,7 @@ export async function homeCards(id: string) { //returns the first 30 cards from 
   try {
 
 
-    let params: PokemonTCG.Parameter = {q: `set.id:${id}`, pageSize: 20, page: 20};
+    let params: PokemonTCG.Parameter = {q: `set.id:${id}`, pageSize: 10, page: 20};
 
     const response = PokemonTCG.findCardsByQueries(params)
       .then(randomCards => {
