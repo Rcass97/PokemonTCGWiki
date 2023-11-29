@@ -37,7 +37,7 @@ export default function SearchBar() {
             const initialSetsArray = initialSetTerm ? initialSetTerm.split(',') : [];
             return { initialTypesArray, initialSetsArray };
         }
-    
+
         formatInitialTerms().then(({ initialTypesArray, initialSetsArray }) => {
             if (initialTypesArray.length === 0) {
                 setAdvanceClick(false);
@@ -55,7 +55,7 @@ export default function SearchBar() {
         const newSearchTerm = searchParams.getAll('name').join('');
         const newTypeTerm = searchParams.getAll('types');
         const newSetTerm = searchParams.getAll('sets');
-        if (newTypeTerm||newSetTerm) {
+        if (newTypeTerm || newSetTerm) {
             setAdvanceClick(true);
         } else {
             setAdvanceClick(false);
@@ -98,17 +98,17 @@ export default function SearchBar() {
         const isChecked = e.target.checked;
         const checkboxId = e.target.id;
         if (isChecked) {
-            if(checkboxId=='types'){
+            if (checkboxId == 'types') {
                 setSearch({ ...search, types: [...search.types, checkboxValue], sets: [...search.sets] });
             }
-            if(checkboxId=='sets'){
+            if (checkboxId == 'sets') {
                 setSearch({ ...search, types: [...search.types], sets: [...search.sets, checkboxValue] });
             }
         } else {
-            if (checkboxId=='types'){
+            if (checkboxId == 'types') {
                 setSearch({ ...search, types: search.types.filter(type => type !== checkboxValue), sets: [...search.sets] });
             }
-            if (checkboxId=='sets'){
+            if (checkboxId == 'sets') {
                 setSearch({ ...search, types: [...search.types], sets: search.sets.filter(set => set !== checkboxValue) });
             }
         }
@@ -142,42 +142,46 @@ export default function SearchBar() {
                     <p className="text-white font-semibold text-center hover:cursor-pointer flex justify-center gap-3 hover:bg-neutral-500 rounded-md transition-all duration-150 ease-in-out" onClick={handleClickAdvanced}>
                         Advanced Filters<img src="/down-arrow.png" alt={'arrow'} className={`p-0 m-0 w-5 invert transition-all duration-150 ease-linear` + (advanceClick ? ` rotate-180` : ` rotate-0`)} />
                     </p>
-                    <div className={`overflow-hidden select-none transition-all duration-150 p-4`}>
-                        <p className="text-white text-xl font-bold pb-3">Energy Type</p>
-                        <div className="grid grid-rows-2 grid-cols-3 gap-2">
-                            {pokemonTypes.map((type) => (
-                                <label key={type} htmlFor={type} className="text-white mx-3 capitalize flex flex-row items-center gap-2 hover:cursor-pointer hover:bg-neutral-900 transition-all duration-100 p-[4px] rounded-lg">
-                                    <input
-                                        type="checkbox"
-                                        id={'types'}
-                                        name="type"
-                                        value={type}
-                                        checked={search.types.includes(type)}
-                                        onChange={handleCheckboxChange}
-                                        className={`mx-1 ${type +`-accent`}`}
-                                    />
-                                    <img src={`./` + type + `.png`} className="w-5 h-5" />
-                                    {type}
-                                </label>
-                            ))}
+                    <div className={`grid grid-cols-2 overflow-hidden select-none transition-all duration-150 p-4`}>
+                        <div>
+                            <p className="text-white text-xl font-bold pb-3 text-center">Energy Type</p>
+                            <div className="grid grid-cols-1 gap-2">
+                                {pokemonTypes.map((type) => (
+                                    <label key={type} htmlFor={type} className="text-white mx-3 capitalize flex flex-row items-center gap-2 hover:cursor-pointer hover:bg-neutral-900 transition-all duration-100 p-[4px] rounded-lg">
+                                        <input
+                                            type="checkbox"
+                                            id={'types'}
+                                            name="type"
+                                            value={type}
+                                            checked={search.types.includes(type)}
+                                            onChange={handleCheckboxChange}
+                                            className={`mx-1 ${type + `-accent`}`}
+                                        />
+                                        <img src={'./' + type + '.png'} className="w-5 h-5" />
+                                        {type}
+                                    </label>
+                                ))}
+                            </div>
                         </div>
-                        <p className="text-white text-xl font-bold pb-3">Sets</p>
-                        <div className="grid grid-rows-2 grid-cols-3 gap-2">
-                            {AllSetData.map((type) => (
-                                <label key={type.img} htmlFor={type.name} className="text-white mx-3 capitalize flex flex-row items-center gap-2 hover:cursor-pointer hover:bg-neutral-900 transition-all duration-100 p-[4px] rounded-lg">
-                                    <input
-                                        type="checkbox"
-                                        id={'sets'}
-                                        name="type"
-                                        value={type.id}
-                                        checked={search.sets.includes(type.id)}
-                                        onChange={handleCheckboxChange}
-                                        className={`mx-1`}
-                                    />
-                                    <img src={type.img} className="w-5 h-5" />
-                                    {type.name}
-                                </label>
-                            ))}
+                        <div>
+                            <p className="text-white text-xl font-bold pb-3 text-center">Sets</p>
+                            <div className="grid grid-cols-1 gap-2">
+                                {AllSetData.map((type) => (
+                                    <label key={type.img} htmlFor={type.name} className="text-white mx-3 capitalize flex flex-row items-center gap-2 hover:cursor-pointer hover:bg-neutral-900 transition-all duration-100 p-[4px] rounded-lg">
+                                        <input
+                                            type="checkbox"
+                                            id={'sets'}
+                                            name="type"
+                                            value={type.id}
+                                            checked={search.sets.includes(type.id)}
+                                            onChange={handleCheckboxChange}
+                                            className={`mx-1`}
+                                        />
+                                        <img src={type.img} className="w-auto h-4" />
+                                        {type.name}
+                                    </label>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>
