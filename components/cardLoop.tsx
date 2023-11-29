@@ -6,6 +6,8 @@ import 'slick-carousel/slick/slick-theme.css';
 
 export default function CardLoop(params: { data: any }) {
 
+console.log(params)
+
     return (
         <div>
             <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-3 grid-cols-2 sm:gap-10 gap-5 sm:mx-10 mx-5">

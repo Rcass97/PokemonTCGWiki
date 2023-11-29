@@ -87,18 +87,49 @@ export async function homeCards(id: string) { //returns the first 30 cards from 
   }
 }
 
-export async function searchCards(keywords?: string) {
+export async function searchCards(props) {
+
+  let searchQuery = '';
+
+  if (props.sendSearch.search) {
+    searchQuery += `name:${props.sendSearch.search}`;
+  }
+
+  if (props.sendSearch.search && props.sendSearch.types && props.sendSearch.types.length > 0) {
+    searchQuery += ' ';
+  }
+
+  if (props.sendSearch.types && props.sendSearch.types.length > 0) {
+    const typesQuery = props.sendSearch.types.map((type) => `types:${type}`).join(' OR ');
+    searchQuery += `(${typesQuery})`;
+  }
+
+  if (props.sendSearch.sets && props.sendSearch.sets.length > 0) {
+    searchQuery += ' ';
+  }
+
+  if (props.sendSearch.sets && props.sendSearch.sets.length > 0) {
+    const setsQuery = props.sendSearch.sets.map((set) => `set.id:${set}`).join(' OR ');
+    searchQuery += `(${setsQuery})`;
+  }
+
   try {
-
-    let params: PokemonTCG.Parameter = { q: 'name:' + keywords, orderBy:'releaseDate' };
-    if (keywords) {
+    let params: PokemonTCG.Parameter = {
+      q: searchQuery,
+      orderBy:'set.releaseDate'
+    };
+    if (props) {
       const response = PokemonTCG.findCardsByQueries(params)
-        .then(randomCards => {
-          return randomCards
+        .then(searchedCards => {
+          return searchedCards
         });
-      const randomCards = await response;
+      const searchedCards = await response;
 
-      return randomCards;
+      console.log(params)
+      console.log(searchedCards)
+
+      return searchedCards;
+
     }
 
     return [];

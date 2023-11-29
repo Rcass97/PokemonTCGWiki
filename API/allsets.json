@@ -1,0 +1,787 @@
+[
+    {
+        "name": "Base",
+        "id": "base1",
+        "img": "https://images.pokemontcg.io/base1/symbol.png"
+    },
+    {
+        "name": "Jungle",
+        "id": "base2",
+        "img": "https://images.pokemontcg.io/base2/symbol.png"
+    },
+    {
+        "name": "Wizards Black Star Promos",
+        "id": "basep",
+        "img": "https://images.pokemontcg.io/basep/symbol.png"
+    },
+    {
+        "name": "Fossil",
+        "id": "base3",
+        "img": "https://images.pokemontcg.io/base3/symbol.png"
+    },
+    {
+        "name": "Base Set 2",
+        "id": "base4",
+        "img": "https://images.pokemontcg.io/base4/symbol.png"
+    },
+    {
+        "name": "Team Rocket",
+        "id": "base5",
+        "img": "https://images.pokemontcg.io/base5/symbol.png"
+    },
+    {
+        "name": "Gym Heroes",
+        "id": "gym1",
+        "img": "https://images.pokemontcg.io/gym1/symbol.png"
+    },
+    {
+        "name": "Gym Challenge",
+        "id": "gym2",
+        "img": "https://images.pokemontcg.io/gym2/symbol.png"
+    },
+    {
+        "name": "Neo Genesis",
+        "id": "neo1",
+        "img": "https://images.pokemontcg.io/neo1/symbol.png"
+    },
+    {
+        "name": "Neo Discovery",
+        "id": "neo2",
+        "img": "https://images.pokemontcg.io/neo2/symbol.png"
+    },
+    {
+        "name": "Southern Islands",
+        "id": "si1",
+        "img": "https://images.pokemontcg.io/si1/symbol.png"
+    },
+    {
+        "name": "Neo Revelation",
+        "id": "neo3",
+        "img": "https://images.pokemontcg.io/neo3/symbol.png"
+    },
+    {
+        "name": "Neo Destiny",
+        "id": "neo4",
+        "img": "https://images.pokemontcg.io/neo4/symbol.png"
+    },
+    {
+        "name": "Legendary Collection",
+        "id": "base6",
+        "img": "https://images.pokemontcg.io/base6/symbol.png"
+    },
+    {
+        "name": "Expedition Base Set",
+        "id": "ecard1",
+        "img": "https://images.pokemontcg.io/ecard1/symbol.png"
+    },
+    {
+        "name": "Aquapolis",
+        "id": "ecard2",
+        "img": "https://images.pokemontcg.io/ecard2/symbol.png"
+    },
+    {
+        "name": "Skyridge",
+        "id": "ecard3",
+        "img": "https://images.pokemontcg.io/ecard3/symbol.png"
+    },
+    {
+        "name": "Ruby & Sapphire",
+        "id": "ex1",
+        "img": "https://images.pokemontcg.io/ex1/symbol.png"
+    },
+    {
+        "name": "Sandstorm",
+        "id": "ex2",
+        "img": "https://images.pokemontcg.io/ex2/symbol.png"
+    },
+    {
+        "name": "Dragon",
+        "id": "ex3",
+        "img": "https://images.pokemontcg.io/ex3/symbol.png"
+    },
+    {
+        "name": "Nintendo Black Star Promos",
+        "id": "np",
+        "img": "https://images.pokemontcg.io/np/symbol.png"
+    },
+    {
+        "name": "Team Magma vs Team Aqua",
+        "id": "ex4",
+        "img": "https://images.pokemontcg.io/ex4/symbol.png"
+    },
+    {
+        "name": "Hidden Legends",
+        "id": "ex5",
+        "img": "https://images.pokemontcg.io/ex5/symbol.png"
+    },
+    {
+        "name": "FireRed & LeafGreen",
+        "id": "ex6",
+        "img": "https://images.pokemontcg.io/ex6/symbol.png"
+    },
+    {
+        "name": "POP Series 1",
+        "id": "pop1",
+        "img": "https://images.pokemontcg.io/pop1/symbol.png"
+    },
+    {
+        "name": "Team Rocket Returns",
+        "id": "ex7",
+        "img": "https://images.pokemontcg.io/ex7/symbol.png"
+    },
+    {
+        "name": "Deoxys",
+        "id": "ex8",
+        "img": "https://images.pokemontcg.io/ex8/symbol.png"
+    },
+    {
+        "name": "Emerald",
+        "id": "ex9",
+        "img": "https://images.pokemontcg.io/ex9/symbol.png"
+    },
+    {
+        "name": "Unseen Forces",
+        "id": "ex10",
+        "img": "https://images.pokemontcg.io/ex10/symbol.png"
+    },
+    {
+        "name": "POP Series 2",
+        "id": "pop2",
+        "img": "https://images.pokemontcg.io/pop2/symbol.png"
+    },
+    {
+        "name": "Delta Species",
+        "id": "ex11",
+        "img": "https://images.pokemontcg.io/ex11/symbol.png"
+    },
+    {
+        "name": "Legend Maker",
+        "id": "ex12",
+        "img": "https://images.pokemontcg.io/ex12/symbol.png"
+    },
+    {
+        "name": "POP Series 3",
+        "id": "pop3",
+        "img": "https://images.pokemontcg.io/pop3/symbol.png"
+    },
+    {
+        "name": "Holon Phantoms",
+        "id": "ex13",
+        "img": "https://images.pokemontcg.io/ex13/symbol.png"
+    },
+    {
+        "name": "Crystal Guardians",
+        "id": "ex14",
+        "img": "https://images.pokemontcg.io/ex14/symbol.png"
+    },
+    {
+        "name": "POP Series 4",
+        "id": "pop4",
+        "img": "https://images.pokemontcg.io/pop4/symbol.png"
+    },
+    {
+        "name": "Dragon Frontiers",
+        "id": "ex15",
+        "img": "https://images.pokemontcg.io/ex15/symbol.png"
+    },
+    {
+        "name": "POP Series 5",
+        "id": "pop5",
+        "img": "https://images.pokemontcg.io/pop5/symbol.png"
+    },
+    {
+        "name": "Power Keepers",
+        "id": "ex16",
+        "img": "https://images.pokemontcg.io/ex16/symbol.png"
+    },
+    {
+        "name": "Diamond & Pearl",
+        "id": "dp1",
+        "img": "https://images.pokemontcg.io/dp1/symbol.png"
+    },
+    {
+        "name": "DP Black Star Promos",
+        "id": "dpp",
+        "img": "https://images.pokemontcg.io/dpp/symbol.png"
+    },
+    {
+        "name": "Mysterious Treasures",
+        "id": "dp2",
+        "img": "https://images.pokemontcg.io/dp2/symbol.png"
+    },
+    {
+        "name": "POP Series 6",
+        "id": "pop6",
+        "img": "https://images.pokemontcg.io/pop6/symbol.png"
+    },
+    {
+        "name": "Secret Wonders",
+        "id": "dp3",
+        "img": "https://images.pokemontcg.io/dp3/symbol.png"
+    },
+    {
+        "name": "Great Encounters",
+        "id": "dp4",
+        "img": "https://images.pokemontcg.io/dp4/symbol.png"
+    },
+    {
+        "name": "POP Series 7",
+        "id": "pop7",
+        "img": "https://images.pokemontcg.io/pop7/symbol.png"
+    },
+    {
+        "name": "Majestic Dawn",
+        "id": "dp5",
+        "img": "https://images.pokemontcg.io/dp5/symbol.png"
+    },
+    {
+        "name": "Legends Awakened",
+        "id": "dp6",
+        "img": "https://images.pokemontcg.io/dp6/symbol.png"
+    },
+    {
+        "name": "POP Series 8",
+        "id": "pop8",
+        "img": "https://images.pokemontcg.io/pop8/symbol.png"
+    },
+    {
+        "name": "Stormfront",
+        "id": "dp7",
+        "img": "https://images.pokemontcg.io/dp7/symbol.png"
+    },
+    {
+        "name": "Platinum",
+        "id": "pl1",
+        "img": "https://images.pokemontcg.io/pl1/symbol.png"
+    },
+    {
+        "name": "POP Series 9",
+        "id": "pop9",
+        "img": "https://images.pokemontcg.io/pop9/symbol.png"
+    },
+    {
+        "name": "Rising Rivals",
+        "id": "pl2",
+        "img": "https://images.pokemontcg.io/pl2/symbol.png"
+    },
+    {
+        "name": "Supreme Victors",
+        "id": "pl3",
+        "img": "https://images.pokemontcg.io/pl3/symbol.png"
+    },
+    {
+        "name": "Arceus",
+        "id": "pl4",
+        "img": "https://images.pokemontcg.io/pl4/symbol.png"
+    },
+    {
+        "name": "Pokémon Rumble",
+        "id": "ru1",
+        "img": "https://images.pokemontcg.io/ru1/symbol.png"
+    },
+    {
+        "name": "HeartGold & SoulSilver",
+        "id": "hgss1",
+        "img": "https://images.pokemontcg.io/hgss1/symbol.png"
+    },
+    {
+        "name": "HGSS Black Star Promos",
+        "id": "hsp",
+        "img": "https://images.pokemontcg.io/hsp/symbol.png"
+    },
+    {
+        "name": "HS—Unleashed",
+        "id": "hgss2",
+        "img": "https://images.pokemontcg.io/hgss2/symbol.png"
+    },
+    {
+        "name": "HS—Undaunted",
+        "id": "hgss3",
+        "img": "https://images.pokemontcg.io/hgss3/symbol.png"
+    },
+    {
+        "name": "HS—Triumphant",
+        "id": "hgss4",
+        "img": "https://images.pokemontcg.io/hgss4/symbol.png"
+    },
+    {
+        "name": "Call of Legends",
+        "id": "col1",
+        "img": "https://images.pokemontcg.io/col1/symbol.png"
+    },
+    {
+        "name": "BW Black Star Promos",
+        "id": "bwp",
+        "img": "https://images.pokemontcg.io/bwp/symbol.png"
+    },
+    {
+        "name": "Black & White",
+        "id": "bw1",
+        "img": "https://images.pokemontcg.io/bw1/symbol.png"
+    },
+    {
+        "name": "McDonald's Collection 2011",
+        "id": "mcd11",
+        "img": "https://images.pokemontcg.io/mcd11/symbol.png"
+    },
+    {
+        "name": "Emerging Powers",
+        "id": "bw2",
+        "img": "https://images.pokemontcg.io/bw2/symbol.png"
+    },
+    {
+        "name": "Noble Victories",
+        "id": "bw3",
+        "img": "https://images.pokemontcg.io/bw3/symbol.png"
+    },
+    {
+        "name": "Next Destinies",
+        "id": "bw4",
+        "img": "https://images.pokemontcg.io/bw4/symbol.png"
+    },
+    {
+        "name": "Dark Explorers",
+        "id": "bw5",
+        "img": "https://images.pokemontcg.io/bw5/symbol.png"
+    },
+    {
+        "name": "McDonald's Collection 2012",
+        "id": "mcd12",
+        "img": "https://images.pokemontcg.io/mcd12/symbol.png"
+    },
+    {
+        "name": "Dragons Exalted",
+        "id": "bw6",
+        "img": "https://images.pokemontcg.io/bw6/symbol.png"
+    },
+    {
+        "name": "Dragon Vault",
+        "id": "dv1",
+        "img": "https://images.pokemontcg.io/dv1/symbol.png"
+    },
+    {
+        "name": "Boundaries Crossed",
+        "id": "bw7",
+        "img": "https://images.pokemontcg.io/bw7/symbol.png"
+    },
+    {
+        "name": "Plasma Storm",
+        "id": "bw8",
+        "img": "https://images.pokemontcg.io/bw8/symbol.png"
+    },
+    {
+        "name": "Plasma Freeze",
+        "id": "bw9",
+        "img": "https://images.pokemontcg.io/bw9/symbol.png"
+    },
+    {
+        "name": "Plasma Blast",
+        "id": "bw10",
+        "img": "https://images.pokemontcg.io/bw10/symbol.png"
+    },
+    {
+        "name": "XY Black Star Promos",
+        "id": "xyp",
+        "img": "https://images.pokemontcg.io/xyp/symbol.png"
+    },
+    {
+        "name": "Legendary Treasures",
+        "id": "bw11",
+        "img": "https://images.pokemontcg.io/bw11/symbol.png"
+    },
+    {
+        "name": "Kalos Starter Set",
+        "id": "xy0",
+        "img": "https://images.pokemontcg.io/xy0/symbol.png"
+    },
+    {
+        "name": "XY",
+        "id": "xy1",
+        "img": "https://images.pokemontcg.io/xy1/symbol.png"
+    },
+    {
+        "name": "Flashfire",
+        "id": "xy2",
+        "img": "https://images.pokemontcg.io/xy2/symbol.png"
+    },
+    {
+        "name": "Furious Fists",
+        "id": "xy3",
+        "img": "https://images.pokemontcg.io/xy3/symbol.png"
+    },
+    {
+        "name": "Phantom Forces",
+        "id": "xy4",
+        "img": "https://images.pokemontcg.io/xy4/symbol.png"
+    },
+    {
+        "name": "Primal Clash",
+        "id": "xy5",
+        "img": "https://images.pokemontcg.io/xy5/symbol.png"
+    },
+    {
+        "name": "Double Crisis",
+        "id": "dc1",
+        "img": "https://images.pokemontcg.io/dc1/symbol.png"
+    },
+    {
+        "name": "Roaring Skies",
+        "id": "xy6",
+        "img": "https://images.pokemontcg.io/xy6/symbol.png"
+    },
+    {
+        "name": "Ancient Origins",
+        "id": "xy7",
+        "img": "https://images.pokemontcg.io/xy7/symbol.png"
+    },
+    {
+        "name": "BREAKthrough",
+        "id": "xy8",
+        "img": "https://images.pokemontcg.io/xy8/symbol.png"
+    },
+    {
+        "name": "BREAKpoint",
+        "id": "xy9",
+        "img": "https://images.pokemontcg.io/xy9/symbol.png"
+    },
+    {
+        "name": "Generations",
+        "id": "g1",
+        "img": "https://images.pokemontcg.io/g1/symbol.png"
+    },
+    {
+        "name": "Fates Collide",
+        "id": "xy10",
+        "img": "https://images.pokemontcg.io/xy10/symbol.png"
+    },
+    {
+        "name": "Steam Siege",
+        "id": "xy11",
+        "img": "https://images.pokemontcg.io/xy11/symbol.png"
+    },
+    {
+        "name": "McDonald's Collection 2016",
+        "id": "mcd16",
+        "img": "https://images.pokemontcg.io/mcd16/symbol.png"
+    },
+    {
+        "name": "Evolutions",
+        "id": "xy12",
+        "img": "https://images.pokemontcg.io/xy12/symbol.png"
+    },
+    {
+        "name": "Sun & Moon",
+        "id": "sm1",
+        "img": "https://images.pokemontcg.io/sm1/symbol.png"
+    },
+    {
+        "name": "SM Black Star Promos",
+        "id": "smp",
+        "img": "https://images.pokemontcg.io/smp/symbol.png"
+    },
+    {
+        "name": "Guardians Rising",
+        "id": "sm2",
+        "img": "https://images.pokemontcg.io/sm2/symbol.png"
+    },
+    {
+        "name": "Burning Shadows",
+        "id": "sm3",
+        "img": "https://images.pokemontcg.io/sm3/symbol.png"
+    },
+    {
+        "name": "Shining Legends",
+        "id": "sm35",
+        "img": "https://images.pokemontcg.io/sm35/symbol.png"
+    },
+    {
+        "name": "Crimson Invasion",
+        "id": "sm4",
+        "img": "https://images.pokemontcg.io/sm4/symbol.png"
+    },
+    {
+        "name": "Ultra Prism",
+        "id": "sm5",
+        "img": "https://images.pokemontcg.io/sm5/symbol.png"
+    },
+    {
+        "name": "Forbidden Light",
+        "id": "sm6",
+        "img": "https://images.pokemontcg.io/sm6/symbol.png"
+    },
+    {
+        "name": "Celestial Storm",
+        "id": "sm7",
+        "img": "https://images.pokemontcg.io/sm7/symbol.png"
+    },
+    {
+        "name": "Dragon Majesty",
+        "id": "sm75",
+        "img": "https://images.pokemontcg.io/sm75/symbol.png"
+    },
+    {
+        "name": "Lost Thunder",
+        "id": "sm8",
+        "img": "https://images.pokemontcg.io/sm8/symbol.png"
+    },
+    {
+        "name": "Team Up",
+        "id": "sm9",
+        "img": "https://images.pokemontcg.io/sm9/symbol.png"
+    },
+    {
+        "name": "Detective Pikachu",
+        "id": "det1",
+        "img": "https://images.pokemontcg.io/det1/symbol.png"
+    },
+    {
+        "name": "Unbroken Bonds",
+        "id": "sm10",
+        "img": "https://images.pokemontcg.io/sm10/symbol.png"
+    },
+    {
+        "name": "Unified Minds",
+        "id": "sm11",
+        "img": "https://images.pokemontcg.io/sm11/symbol.png"
+    },
+    {
+        "name": "Hidden Fates",
+        "id": "sm115",
+        "img": "https://images.pokemontcg.io/sm115/symbol.png"
+    },
+    {
+        "name": "Shiny Vault",
+        "id": "sma",
+        "img": "https://images.pokemontcg.io/sma/symbol.png"
+    },
+    {
+        "name": "McDonald's Collection 2019",
+        "id": "mcd19",
+        "img": "https://images.pokemontcg.io/mcd19/symbol.png"
+    },
+    {
+        "name": "Cosmic Eclipse",
+        "id": "sm12",
+        "img": "https://images.pokemontcg.io/sm12/symbol.png"
+    },
+    {
+        "name": "SWSH Black Star Promos",
+        "id": "swshp",
+        "img": "https://images.pokemontcg.io/swshp/symbol.png"
+    },
+    {
+        "name": "Sword & Shield",
+        "id": "swsh1",
+        "img": "https://images.pokemontcg.io/swsh1/symbol.png"
+    },
+    {
+        "name": "Rebel Clash",
+        "id": "swsh2",
+        "img": "https://images.pokemontcg.io/swsh2/symbol.png"
+    },
+    {
+        "name": "Darkness Ablaze",
+        "id": "swsh3",
+        "img": "https://images.pokemontcg.io/swsh3/symbol.png"
+    },
+    {
+        "name": "Champion's Path",
+        "id": "swsh35",
+        "img": "https://images.pokemontcg.io/swsh35/symbol.png"
+    },
+    {
+        "name": "Vivid Voltage",
+        "id": "swsh4",
+        "img": "https://images.pokemontcg.io/swsh4/symbol.png"
+    },
+    {
+        "name": "Shining Fates",
+        "id": "swsh45",
+        "img": "https://images.pokemontcg.io/swsh45/symbol.png"
+    },
+    {
+        "name": "Shiny Vault",
+        "id": "swsh45sv",
+        "img": "https://images.pokemontcg.io/swsh45sv/symbol.png"
+    },
+    {
+        "name": "Battle Styles",
+        "id": "swsh5",
+        "img": "https://images.pokemontcg.io/swsh5/symbol.png"
+    },
+    {
+        "name": "Chilling Reign",
+        "id": "swsh6",
+        "img": "https://images.pokemontcg.io/swsh6/symbol.png"
+    },
+    {
+        "name": "Evolving Skies",
+        "id": "swsh7",
+        "img": "https://images.pokemontcg.io/swsh7/symbol.png"
+    },
+    {
+        "name": "Celebrations",
+        "id": "cel25",
+        "img": "https://images.pokemontcg.io/cel25/symbol.png"
+    },
+    {
+        "name": "Celebrations: Classic Collection",
+        "id": "cel25c",
+        "img": "https://images.pokemontcg.io/cel25c/symbol.png"
+    },
+    {
+        "name": "McDonald's Collection 2014",
+        "id": "mcd14",
+        "img": "https://images.pokemontcg.io/mcd14/symbol.png"
+    },
+    {
+        "name": "McDonald's Collection 2015",
+        "id": "mcd15",
+        "img": "https://images.pokemontcg.io/mcd15/symbol.png"
+    },
+    {
+        "name": "McDonald's Collection 2018",
+        "id": "mcd18",
+        "img": "https://images.pokemontcg.io/mcd18/symbol.png"
+    },
+    {
+        "name": "McDonald's Collection 2017",
+        "id": "mcd17",
+        "img": "https://images.pokemontcg.io/mcd17/symbol.png"
+    },
+    {
+        "name": "McDonald's Collection 2021",
+        "id": "mcd21",
+        "img": "https://images.pokemontcg.io/mcd21/symbol.png"
+    },
+    {
+        "name": "Best of Game",
+        "id": "bp",
+        "img": "https://images.pokemontcg.io/bp/symbol.png"
+    },
+    {
+        "name": "Fusion Strike",
+        "id": "swsh8",
+        "img": "https://images.pokemontcg.io/swsh8/symbol.png"
+    },
+    {
+        "name": "Pokémon Futsal Collection",
+        "id": "fut20",
+        "img": "https://images.pokemontcg.io/fut20/symbol.png"
+    },
+    {
+        "name": "EX Trainer Kit Latias",
+        "id": "tk1a",
+        "img": "https://images.pokemontcg.io/tk1a/symbol.png"
+    },
+    {
+        "name": "EX Trainer Kit Latios",
+        "id": "tk1b",
+        "img": "https://images.pokemontcg.io/tk1b/symbol.png"
+    },
+    {
+        "name": "EX Trainer Kit 2 Plusle",
+        "id": "tk2a",
+        "img": "https://images.pokemontcg.io/tk2a/symbol.png"
+    },
+    {
+        "name": "EX Trainer Kit 2 Minun",
+        "id": "tk2b",
+        "img": "https://images.pokemontcg.io/tk2b/symbol.png"
+    },
+    {
+        "name": "Brilliant Stars",
+        "id": "swsh9",
+        "img": "https://images.pokemontcg.io/swsh9/symbol.png"
+    },
+    {
+        "name": "Brilliant Stars Trainer Gallery",
+        "id": "swsh9tg",
+        "img": "https://images.pokemontcg.io/swsh9tg/symbol.png"
+    },
+    {
+        "name": "Astral Radiance",
+        "id": "swsh10",
+        "img": "https://images.pokemontcg.io/swsh10/symbol.png"
+    },
+    {
+        "name": "Astral Radiance Trainer Gallery",
+        "id": "swsh10tg",
+        "img": "https://images.pokemontcg.io/swsh10tg/symbol.png"
+    },
+    {
+        "name": "Pokémon GO",
+        "id": "pgo",
+        "img": "https://images.pokemontcg.io/pgo/symbol.png"
+    },
+    {
+        "name": "Lost Origin",
+        "id": "swsh11",
+        "img": "https://images.pokemontcg.io/swsh11/symbol.png"
+    },
+    {
+        "name": "Lost Origin Trainer Gallery",
+        "id": "swsh11tg",
+        "img": "https://images.pokemontcg.io/swsh11tg/symbol.png"
+    },
+    {
+        "name": "Silver Tempest",
+        "id": "swsh12",
+        "img": "https://images.pokemontcg.io/swsh12/symbol.png"
+    },
+    {
+        "name": "Silver Tempest Trainer Gallery",
+        "id": "swsh12tg",
+        "img": "https://images.pokemontcg.io/swsh12tg/symbol.png"
+    },
+    {
+        "name": "McDonald's Collection 2022",
+        "id": "mcd22",
+        "img": "https://images.pokemontcg.io/mcd22/symbol.png"
+    },
+    {
+        "name": "Crown Zenith",
+        "id": "swsh12pt5",
+        "img": "https://images.pokemontcg.io/swsh12pt5/symbol.png"
+    },
+    {
+        "name": "Crown Zenith Galarian Gallery",
+        "id": "swsh12pt5gg",
+        "img": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png"
+    },
+    {
+        "name": "Scarlet & Violet",
+        "id": "sv1",
+        "img": "https://images.pokemontcg.io/sv1/symbol.png"
+    },
+    {
+        "name": "Scarlet & Violet Black Star Promos",
+        "id": "svp",
+        "img": "https://images.pokemontcg.io/svp/symbol.png"
+    },
+    {
+        "name": "Paldea Evolved",
+        "id": "sv2",
+        "img": "https://images.pokemontcg.io/sv2/symbol.png"
+    },
+    {
+        "name": "Scarlet & Violet Energies",
+        "id": "sve",
+        "img": "https://images.pokemontcg.io/sve/symbol.png"
+    },
+    {
+        "name": "Obsidian Flames",
+        "id": "sv3",
+        "img": "https://images.pokemontcg.io/sv3/symbol.png"
+    },
+    {
+        "name": "151",
+        "id": "sv3pt5",
+        "img": "https://images.pokemontcg.io/sv3pt5/symbol.png"
+    },
+    {
+        "name": "Paradox Rift",
+        "id": "sv4",
+        "img": "https://images.pokemontcg.io/sv4/symbol.png"
+    }
+]

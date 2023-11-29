@@ -72,7 +72,7 @@ export default function CardCarousel(params: { data: any }) {
                     {params.data.map((data: any, index: number) => (
                         <div key={index}>
                             <Link href={'/card/' + data.id}>
-                                <motion.div className='flex sm:p-5 p-5'
+                                <motion.div className='flex sm:p-3 p-5'
                                     transition={{ duration: 0.2 }}
                                     whileHover={{ scale: 1.07 }}
                                     whileTap={{ scale: 1.1 }}>
