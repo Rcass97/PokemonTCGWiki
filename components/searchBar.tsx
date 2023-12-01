@@ -114,7 +114,7 @@ export default function SearchBar() {
         }
     }
 
-    const pokemonTypes = ['fire', 'water', 'grass', 'lightning', 'colorless', 'metal', 'dragon', 'fairy', 'fighting', 'psychic', 'darkness'];
+    const pokemonTypes = ['Grass', 'Fire', 'Water', 'Electric', 'Psychic', 'Fighting', 'Darkness', 'Metal', 'Dragon', 'Fairy', 'Colorless'];
 
     return (
         <>
@@ -157,7 +157,7 @@ export default function SearchBar() {
                                             onChange={handleCheckboxChange}
                                             className={`mx-1 ${type + `-accent`}`}
                                         />
-                                        <img src={'/' + type + '.png'} className="w-5 h-5" />
+                                        <img src={'./' + type + '.png'} className="w-5 h-5" />
                                         {type}
                                     </label>
                                 ))}
