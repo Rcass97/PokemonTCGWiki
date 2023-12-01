@@ -19,7 +19,7 @@ console.log(params)
                                transition={{ duration: 0.2 }}
                                whileHover={{ scale: 1.07 }}
                                whileTap={{ scale: 1.1 }}>
-                            <img src={data.images.small} className='w-full rounded-xl mb-2 shadow-xl' />
+                            <img src={data.images.small} className='w-full rounded-xl mb-2 shadow-xl hover:shadow-2xl' />
                         </motion.div>
                         <div className='flex flex-col'>
                             <p className='text-lg font-bold text-center'>{data.name}</p>
