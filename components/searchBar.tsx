@@ -157,7 +157,7 @@ export default function SearchBar() {
                                             onChange={handleCheckboxChange}
                                             className={`mx-1 ${type + `-accent`}`}
                                         />
-                                        <img src={'./' + type + '.png'} className="w-5 h-5" />
+                                        <img src={'/' + type + '.png'} className="w-5 h-5" />
                                         {type}
                                     </label>
                                 ))}
